@@ -1,16 +1,26 @@
 
   function resetGrid() {
     
-
-       
-
        while(main.firstChild) main.removeChild( main.firstChild);
 
        actualGrid(20) 
 
   }
- 
+
+
+  function customPrompt() {
+    let value = prompt('Enter grid size');
+
+    while(main.firstChild) main.removeChild( main.firstChild);
+
+    actualGrid(value);
+  }
+
+   let custom = document.querySelector('#custom')
+
    let reset = document.querySelector('#reset');
+
+   custom.addEventListener('click', customPrompt)
 
 
    reset.addEventListener('click', resetGrid);
