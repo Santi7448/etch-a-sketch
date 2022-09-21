@@ -1,0 +1,23 @@
+
+
+#parent {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.row {
+    height: 27px;
+    
+    
+}
+
+.elem {
+    
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
